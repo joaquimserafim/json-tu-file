@@ -14,7 +14,6 @@ test('write', function (t) {
 
     t.pass('write json object to file.');
   });
-
 });
 
 
@@ -29,7 +28,6 @@ test('write sync', function (t) {
   } catch (err) {
     t.error(err);
   }
-
 });
 
 test('read', function (t) {
@@ -40,7 +38,6 @@ test('read', function (t) {
 
     t.deepEqual(typeof data, 'object', JSON.stringify(data));
   });
-
 });
 
 test('read sync', function (t) {
@@ -52,6 +49,4 @@ test('read sync', function (t) {
   } catch (err) {
     t.error(err);
   }
-
-
 });
