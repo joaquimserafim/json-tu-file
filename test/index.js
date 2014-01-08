@@ -9,7 +9,7 @@ test('write', function (t) {
 
   var obj = {"n":8,"msg":"Hello World 7bc59b8e-8a3f-2d04-62eb-8c9f5c39606f","tmx":1388775322979};
 
-  JSONFile.writeFile(obj, 'test/write.json', {encoding: 'ascii'}, function (err) {
+  JSONFile.writeFile(obj, 'test/write.json', function (err) {
     if (err) t.error(err, 'write json to file');
 
     t.pass('write json object to file.');
@@ -23,7 +23,7 @@ test('write sync', function (t) {
   var obj = {"n":8,"msg":"Hello World 7bc59b8e-8a3f-2d04-62eb-8c9f5c39606f","tmx":1388775322979};
 
   try {
-    JSONFile.writeFileSync(obj, 'test/write_sync.json', {encoding: 'ascii'});
+    JSONFile.writeFileSync(obj, 'test/write_sync.json');
     t.pass('write sync json object to file.');
   } catch (err) {
     t.error(err);
