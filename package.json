@@ -1,0 +1,34 @@
+{
+  "name": "json-tu-file",
+  "version": "1.0.0",
+  "description": "An simplest way to read/write JSON.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "tape test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/joaquimserafim/json-tu-file.git"
+  },
+  "keywords": [
+    "json",
+    "file",
+    "dump",
+    "stream",
+    "write",
+    "read"
+  ],
+  "author": "@joaquimserafim",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joaquimserafim/json-tu-file/issues"
+  },
+  "homepage": "https://github.com/joaquimserafim/json-tu-file",
+  "devDependencies": {
+    "tape": "~2.3.2"
+  },
+  "dependencies": {}
+}
