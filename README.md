@@ -7,8 +7,8 @@
 
 An simplest way to read/write JSON and to avoid to always use try/catch blocks when use JSON.parse/JSON.stringify with fs.readFile and fs.writeFile.
 
-    
-   
+
+**V1.1**
 
 ##Usage
 
@@ -28,7 +28,12 @@ An simplest way to read/write JSON and to avoid to always use try/catch blocks w
         if (err) throw err;
         
         console.log('ok');
-    }); 
+    });
+    
+    // options: Object
+    //    encoding String | Null default = 'utf8'
+    //    mode Number default = 438 (aka 0666 in Octal)
+    //    flag String default = 'w'
     
     
     // writeFileSync(obj, file, [options])
