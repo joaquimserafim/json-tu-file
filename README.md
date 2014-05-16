@@ -8,7 +8,7 @@
 An simplest way to read/write JSON and to avoid to always use try/catch blocks when use JSON.parse/JSON.stringify with fs.readFile and fs.writeFile.
 
 
-**V1.1**
+**V1.2**
 
 ##Usage
 

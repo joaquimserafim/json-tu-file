@@ -1,6 +1,4 @@
 var test = require('tape');
-
-
 var JSONFile = require('../');
 
 
