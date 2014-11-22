@@ -9,4 +9,6 @@
  notifications:
   email:
    - joaquim.serafim@gmail.com
+ before_install:
+   - npm install -g npm@~1.4.6
  script: npm test

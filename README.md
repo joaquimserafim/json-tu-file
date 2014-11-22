@@ -5,10 +5,19 @@
 [![Build Status](https://travis-ci.org/joaquimserafim/json-tu-file.png?branch=master)](https://travis-ci.org/joaquimserafim/json-tu-file)
 
 
-An simplest way to read/write JSON and to avoid to always use try/catch blocks when use JSON.parse/JSON.stringify with fs.readFile and fs.writeFile.
+A simple way to read/write JSON from files.
 
 
-**V1.2**
+**V1.3**
+
+**code coverage:**
+`npm test && npm run coverage`
+
+**codestyle:** 	
+`npm run codestyle`
+
+**jshint:** 	
+`npm run jshint`
 
 ##Usage
 
