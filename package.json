@@ -1,13 +1,17 @@
 {
   "name": "json-tu-file",
-  "version": "1.2.0",
-  "description": "An simplest way to read/write JSON.",
+  "version": "1.3.0",
+  "description": "A simple way to read/write JSON from files",
   "main": "index.js",
   "directories": {
     "test": "test"
   },
   "scripts": {
-    "test": "tape test"
+    "test": "./node_modules/istanbul/lib/cli.js cover ./node_modules/tape/bin/tape test/*.js",
+    "jshint": "./node_modules/jshint/bin/jshint -c .jshintrc index.js test/*.js",
+    "codestyle": "./node_modules/jscs/bin/jscs -p google index.js test/*.js",
+    "check-coverage": "./node_modules/istanbul/lib/cli.js check-coverage --statements 100 --functions 100 --lines 100 --branches 100",
+    "coverage": "open coverage/lcov-report/index.html"
   },
   "repository": {
     "type": "git",
@@ -28,9 +32,19 @@
   },
   "homepage": "https://github.com/joaquimserafim/json-tu-file",
   "devDependencies": {
+    "istanbul": "^0.3.2",
+    "jscs": "^1.7.3",
+    "jshint": "^2.5.10",
+    "pre-commit": "0.0.9",
     "tape": "~2.3.2"
   },
   "dependencies": {
-    "is-json": "~1.1.1"
-  }
+    "json-stringify-safe": "^5.0.0"
+  },
+  "pre-commit": [
+    "jshint",
+    "codestyle",
+    "test",
+    "check-coverage"
+  ]
 }
