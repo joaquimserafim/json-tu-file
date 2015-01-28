@@ -2,22 +2,10 @@
 
 <a href="https://nodei.co/npm/json-tu-file/"><img src="https://nodei.co/npm/json-tu-file.png"></a>
 
-[![Build Status](https://travis-ci.org/joaquimserafim/json-tu-file.png?branch=master)](https://travis-ci.org/joaquimserafim/json-tu-file)
-
-
 A simple way to read/write JSON from files.
 
+[![Build Status](https://img.shields.io/badge/build-passing-brightgreen.svg?style=flat-square)](https://travis-ci.org/joaquimserafim/json-tu-file)![Code Coverage 100%](https://img.shields.io/badge/code%20coverage-100%25-green.svg?style=flat-square)[![ISC License](https://img.shields.io/badge/license-ISC-blue.svg?style=flat-square)](https://github.com/joaquimserafim/json-tu-file/blob/master/LICENSE)[![npm - v1.4.1](https://img.shields.io/badge/npm-v1.4.1-blue.svg?style=flat-square)](https://www.npmjs.com/package/json-tu-file)
 
-**V1.3**
-
-**code coverage:**
-`npm test && npm run coverage`
-
-**codestyle:** 	
-`npm run codestyle`
-
-**jshint:** 	
-`npm run jshint`
 
 ##Usage
 
@@ -62,3 +50,33 @@ A simple way to read/write JSON from files.
     //readFileSync(file)
     
     var data = JSONFile.readFileSync('write.json');
+
+
+## Development
+
+**this projet has been set up with a precommit that forces you to follow a code style, no jshint issues and 100% of code coverage before commit**
+
+to run test
+``` js
+npm test
+```
+
+to run jshint
+``` js
+npm run jshint
+```
+
+to run code style
+``` js
+npm run code-style
+```
+
+to check code coverage
+``` js
+npm run check-coverage
+```
+
+to open the code coverage report
+``` js
+npm run open-coverage
+```

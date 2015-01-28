@@ -4,8 +4,9 @@ var fs = require('fs');
 var stringify = require('json-stringify-safe');
 
 //
-//  json-tu-file
+//  json-tu-file LIB
 //
+
 var jsonTuFile = module.exports;
 
 jsonTuFile._spaces = 2;
