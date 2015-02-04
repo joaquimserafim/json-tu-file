@@ -1,6 +1,6 @@
 {
   "name": "json-tu-file",
-  "version": "1.4.1",
+  "version": "1.4.2",
   "description": "A simple way to read/write JSON from files",
   "main": "index.js",
   "directories": {
